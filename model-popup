@@ -1,0 +1,18 @@
+ @Input() show:any=true;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  close(event:any){
+    if(!event.target.classList.contains('continuer__popup--mode')){
+      this.show=false;
+    }else{
+      
+    }
+  }
+  
+  <div class="popup-container" (click)="close($event)" *ngIf="show">
+    <div class="continuer__popup--mode">
+        22222
+    </div>
+</div>
